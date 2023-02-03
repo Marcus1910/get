@@ -1,0 +1,7062 @@
+[
+    {
+        "id": "b977de061ab70fbb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e832187964b99a67",
+        "type": "tab",
+        "label": "ToF Sensor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "73e9e8e41d7d2ae1",
+        "type": "tab",
+        "label": "MPU6050 - Sensor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "da772434408204af",
+        "type": "tab",
+        "label": "Servo 180 graden - Actuator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6397e4bd92a0e7f0",
+        "type": "tab",
+        "label": "LED matrix - Actuator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f38534ab1a232b5a",
+        "type": "tab",
+        "label": "Connecting",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "461e2ece4e14a1f0",
+        "type": "ui_group",
+        "name": "ToF",
+        "tab": "959de9bbcc816ba1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "7fedc3b37f9447ae",
+        "type": "mqtt-broker",
+        "name": "OrangePI",
+        "broker": "192.168.5.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "344d92912a14715e",
+        "type": "ui_group",
+        "name": "MPU",
+        "tab": "959de9bbcc816ba1",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "f9787aed462aa885",
+        "type": "ui_group",
+        "name": "Servo",
+        "tab": "959de9bbcc816ba1",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "0201fe540ed504b3",
+        "type": "ui_group",
+        "name": "Matrix",
+        "tab": "959de9bbcc816ba1",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "21730c426eb878f6",
+        "type": "ui_group",
+        "name": "Connect MPU en Servo",
+        "tab": "959de9bbcc816ba1",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "07c22ea244a45299",
+        "type": "ui_group",
+        "name": "Connect ToF en Servo",
+        "tab": "959de9bbcc816ba1",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f1be4834f23f01d8",
+        "type": "ui_group",
+        "name": "Connect ToF en Matrix",
+        "tab": "959de9bbcc816ba1",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "959de9bbcc816ba1",
+        "type": "ui_tab",
+        "name": "User_Input",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c90e9670360eb833",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ef59764beb39fead",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "(GET) Afstand (mm)",
+        "info": "",
+        "x": 130,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "74fb3577e85f02eb",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "(GET) Batterij voltage (en/of percentage) ",
+        "info": "",
+        "x": 200,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "38a25eb8acd71068",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "(GET) Oplaad status (in de oplader ja of nee)",
+        "info": "",
+        "x": 210,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "16c38530fc086fec",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel",
+        "info": "",
+        "x": 250,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "a2e8ca8ca495b674",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "function 2",
+        "func": "msg.afstand = global.get(\"tofdata.data.afstand\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1000,
+        "wires": [
+            [
+                "816c79fbd1aa0840",
+                "4c5974e417779a2f"
+            ]
+        ]
+    },
+    {
+        "id": "816c79fbd1aa0840",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "debug 39",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "37f85b7ba018866e",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1000,
+        "wires": [
+            [
+                "a2e8ca8ca495b674"
+            ]
+        ]
+    },
+    {
+        "id": "4c5974e417779a2f",
+        "type": "ui_text",
+        "z": "e832187964b99a67",
+        "group": "461e2ece4e14a1f0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Afstand: ",
+        "format": "{{msg.afstand}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 480,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "0a00cf2b0e7a7519",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "function 3",
+        "func": "msg.battery = global.get(\"tofdata.battery\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1180,
+        "wires": [
+            [
+                "e5fd896fea52230c",
+                "07e11311e24df6a7"
+            ]
+        ]
+    },
+    {
+        "id": "e5fd896fea52230c",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "debug 40",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "07e11311e24df6a7",
+        "type": "ui_text",
+        "z": "e832187964b99a67",
+        "group": "461e2ece4e14a1f0",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery: ",
+        "format": "{{msg.battery}}%",
+        "layout": "row-spread",
+        "className": "",
+        "x": 500,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "35e3e0466cded03c",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "function 4",
+        "func": "msg.charging = global.get(\"tofdata.isCharging\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1360,
+        "wires": [
+            [
+                "181a57a90a8499a4",
+                "b0bae61905b34d74"
+            ]
+        ]
+    },
+    {
+        "id": "181a57a90a8499a4",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "debug 41",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "b0bae61905b34d74",
+        "type": "ui_text",
+        "z": "e832187964b99a67",
+        "group": "461e2ece4e14a1f0",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Charging: ",
+        "format": "{{msg.charging}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 500,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "902a3695fc17fdbb",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "function 5",
+        "func": "msg.wifi = global.get(\"tofdata.wifi\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1540,
+        "wires": [
+            [
+                "75188decde474705",
+                "41ac650280d749ee"
+            ]
+        ]
+    },
+    {
+        "id": "75188decde474705",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "debug 42",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "41ac650280d749ee",
+        "type": "ui_text",
+        "z": "e832187964b99a67",
+        "group": "461e2ece4e14a1f0",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wifi: ",
+        "format": "{{msg.wifi}}dBm",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "c332143af3b342ae",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1180,
+        "wires": [
+            [
+                "0a00cf2b0e7a7519"
+            ]
+        ]
+    },
+    {
+        "id": "bda2fc96a1b50858",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1360,
+        "wires": [
+            [
+                "35e3e0466cded03c"
+            ]
+        ]
+    },
+    {
+        "id": "9e4e075111f83742",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1540,
+        "wires": [
+            [
+                "902a3695fc17fdbb"
+            ]
+        ]
+    },
+    {
+        "id": "928d8614956bd408",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ToF",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ade56750993dde1e",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "Copy flow.DBdata to msg payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "DBdata",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "63e49773d5ea0839"
+            ]
+        ]
+    },
+    {
+        "id": "0e50ac9e359c5f4e",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "mqtt msg test",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "9939dcec18fb8b66",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "ade56750993dde1e"
+            ]
+        ]
+    },
+    {
+        "id": "51bd115df941f02d",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "Payload for MQTT",
+        "info": "",
+        "x": 130,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "63e49773d5ea0839",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "Generate SQL",
+        "func": "//add the values to the msg so they can be debugged and used later\nmsg.device = msg.payload[0]\nmsg.item = msg.payload[1]\nmsg.serial = msg.payload[2]\n\nmsg.topic=`REPLACE INTO pack_to_light (Device,Item,Serial) VALUES ('${msg.device}','${msg.item}',${msg.serial})`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 640,
+        "wires": [
+            [
+                "780bc3ed78cbf705",
+                "d19eeacef758bae0"
+            ]
+        ]
+    },
+    {
+        "id": "780bc3ed78cbf705",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "to MySQL",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "d19eeacef758bae0",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "Generate MQTT topic+payload",
+        "func": "msg.topic = msg.device + '/item_inside'\nmsg.payload = {\n    \"device\" : msg.device,\n    \"item\": msg.item,\n    \"serial\": msg.serial\n}\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 640,
+        "wires": [
+            [
+                "0e50ac9e359c5f4e",
+                "928d8614956bd408"
+            ]
+        ]
+    },
+    {
+        "id": "bd325ef7c61a49c1",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"ToF.device\")\nvar item = global.get(\"ToF.item\")\nvar serial = global.get(\"ToF.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 760,
+        "wires": [
+            [
+                "66b3bfed15b87a95"
+            ]
+        ]
+    },
+    {
+        "id": "217ca6cfd5ab10cd",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "bd325ef7c61a49c1"
+            ]
+        ]
+    },
+    {
+        "id": "66b3bfed15b87a95",
+        "type": "mqtt in",
+        "z": "e832187964b99a67",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 600,
+        "y": 760,
+        "wires": [
+            [
+                "2dfe8312f1b74a5c",
+                "573b5ab33b578cad"
+            ]
+        ]
+    },
+    {
+        "id": "2dfe8312f1b74a5c",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "dynamic topic",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "topic",
+        "statusType": "auto",
+        "x": 860,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ad591e419c78edf3",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "Dynamic subscribe",
+        "info": "",
+        "x": 130,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "0fce56ca09fd29a3",
+        "type": "mqtt out",
+        "z": "e832187964b99a67",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 550,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "40a6f26f08aa3cc7",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"data\":{\"afstand\":50},\"battery\":3.3,\"isCharging\":true,\"wifi\":-60}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "48ac143682fbd255"
+            ]
+        ]
+    },
+    {
+        "id": "48ac143682fbd255",
+        "type": "function",
+        "z": "e832187964b99a67",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"ToF.device\")\nvar item = global.get(\"ToF.item\")\nvar serial = global.get(\"ToF.serial\") \nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 840,
+        "wires": [
+            [
+                "0fce56ca09fd29a3"
+            ]
+        ]
+    },
+    {
+        "id": "62bc084e34988dec",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "573b5ab33b578cad",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tofdata",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 760,
+        "wires": [
+            [
+                "62bc084e34988dec"
+            ]
+        ]
+    },
+    {
+        "id": "493f0816424421f0",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "6f792e6ec7c48342"
+            ]
+        ]
+    },
+    {
+        "id": "6f792e6ec7c48342",
+        "type": "join",
+        "z": "e832187964b99a67",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "idinput",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "b0bd633835465115",
+                "9b9beff9366d1c16",
+                "fa48726d86fa5de0",
+                "83f14b50639e2eec"
+            ]
+        ]
+    },
+    {
+        "id": "b0bd633835465115",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "idinput.a",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "89978d69b3d1700e",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "6f792e6ec7c48342"
+            ]
+        ]
+    },
+    {
+        "id": "9b9beff9366d1c16",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "Clear Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "null",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "aeb4ae9a31133709"
+            ]
+        ]
+    },
+    {
+        "id": "a5e25d08397456a1",
+        "type": "ui_button",
+        "z": "e832187964b99a67",
+        "name": "Submit",
+        "group": "461e2ece4e14a1f0",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "<font size=\"1\">Submit</font>",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "ok",
+        "payloadType": "str",
+        "topic": "b",
+        "topicType": "msg",
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "493f0816424421f0"
+            ]
+        ]
+    },
+    {
+        "id": "aeb4ae9a31133709",
+        "type": "ui_text_input",
+        "z": "e832187964b99a67",
+        "name": "",
+        "label": "serial nummer",
+        "tooltip": "",
+        "group": "461e2ece4e14a1f0",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "a",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "89978d69b3d1700e"
+            ]
+        ]
+    },
+    {
+        "id": "fa48726d86fa5de0",
+        "type": "ui_text",
+        "z": "e832187964b99a67",
+        "group": "461e2ece4e14a1f0",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "Id:",
+        "label": "<font size=\"1\">ID: </font>",
+        "format": "<font size=\"2\">{{msg.idinput.a}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 970,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "58776a72adcfb701",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "inject item",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tof",
+        "payloadType": "str",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "ca154f1acaf0810d"
+            ]
+        ]
+    },
+    {
+        "id": "202073a4a11eb046",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "inject serial",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "1768998810773d8b"
+            ]
+        ]
+    },
+    {
+        "id": "3c20ca2a22e46b30",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8365c49dec36b185",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3e10f7742ad47b8a",
+        "type": "debug",
+        "z": "e832187964b99a67",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "ca154f1acaf0810d",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "set flow DBdata[1] to item",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[1]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "8365c49dec36b185"
+            ]
+        ]
+    },
+    {
+        "id": "1768998810773d8b",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "set flow DBdata[2] to serial",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[2]",
+                "pt": "flow",
+                "to": "tofinput.a",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "3e10f7742ad47b8a"
+            ]
+        ]
+    },
+    {
+        "id": "639c9bdb9e6f9aa1",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "set flow DBdata[0] to device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[0]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "3c20ca2a22e46b30"
+            ]
+        ]
+    },
+    {
+        "id": "5840ad1cf7c04360",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "inject device",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sensor",
+        "payloadType": "str",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "639c9bdb9e6f9aa1"
+            ]
+        ]
+    },
+    {
+        "id": "83f14b50639e2eec",
+        "type": "change",
+        "z": "e832187964b99a67",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tofinput",
+                "pt": "global",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38199fc01230f1b9",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "Set up topic",
+        "info": "",
+        "x": 130,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d44f9fb355a8a71f",
+        "type": "comment",
+        "z": "e832187964b99a67",
+        "name": "Get serial from user",
+        "info": "",
+        "x": 150,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ac4232f7c729efbe",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 650,
+        "y": 960,
+        "wires": [
+            [
+                "33b78c7b5a4adf36"
+            ]
+        ]
+    },
+    {
+        "id": "33b78c7b5a4adf36",
+        "type": "mqtt out",
+        "z": "e832187964b99a67",
+        "name": "",
+        "topic": "sensor/tof/4d5a4da5d4a/data",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 920,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "09a227f76dac9eac",
+        "type": "inject",
+        "z": "e832187964b99a67",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 690,
+        "y": 1040,
+        "wires": [
+            [
+                "12377a28abbdfb16"
+            ]
+        ]
+    },
+    {
+        "id": "12377a28abbdfb16",
+        "type": "mqtt out",
+        "z": "e832187964b99a67",
+        "name": "",
+        "topic": "sensor/mpu/dadjykytkg4/data",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 900,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "1e560cb181ab6128",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "MPU6050 - Sensor",
+        "info": "(GET) Afstand (mm (als dit mogelijk is))\n(GET) Batterij voltage (en/of percentage)\n(GET) Oplaad status (zit hij op de oplader ja of nee)\n(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel\n",
+        "x": 190,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f0a385f208c7eecc",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "(GET) Roll Pitch Yaw (mm)",
+        "info": "",
+        "x": 230,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "e2edb9e7e8c7a493",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "(GET) Batterij voltage (en/of percentage) ",
+        "info": "",
+        "x": 280,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "85696587f6d10ae3",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "(GET) Oplaad status (in de oplader ja of nee)",
+        "info": "",
+        "x": 290,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "e929c3ea2a512b49",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel",
+        "info": "",
+        "x": 330,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "35d080ded4b093ef",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "d30d3c4ba0bd5f6d"
+            ]
+        ]
+    },
+    {
+        "id": "d30d3c4ba0bd5f6d",
+        "type": "join",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "idinput",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 730,
+        "y": 400,
+        "wires": [
+            [
+                "7ca1266fff2e5f28",
+                "ca03424f5ba6a15d",
+                "bad3d1fa3f22b33b",
+                "898747acef495ebf"
+            ]
+        ]
+    },
+    {
+        "id": "7ca1266fff2e5f28",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "idinput.a",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4fc6d38227d40da3",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 400,
+        "wires": [
+            [
+                "d30d3c4ba0bd5f6d"
+            ]
+        ]
+    },
+    {
+        "id": "ca03424f5ba6a15d",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Clear Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "null",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "837f621f4b3c594b"
+            ]
+        ]
+    },
+    {
+        "id": "837f621f4b3c594b",
+        "type": "ui_text_input",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "label": "serial nummer",
+        "tooltip": "",
+        "group": "344d92912a14715e",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "a",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 400,
+        "y": 400,
+        "wires": [
+            [
+                "4fc6d38227d40da3"
+            ]
+        ]
+    },
+    {
+        "id": "bad3d1fa3f22b33b",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Id:",
+        "label": "<font size=\"1\">ID: </font>",
+        "format": "<font size=\"2\">{{msg.idinput.a}}</font>",
+        "layout": "row-left",
+        "className": "",
+        "x": 970,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6ab2048ef33815a1",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "inject item",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "mpu",
+        "payloadType": "str",
+        "x": 230,
+        "y": 600,
+        "wires": [
+            [
+                "8129f2071848bc52"
+            ]
+        ]
+    },
+    {
+        "id": "6ce2d79025c2e226",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "inject serial",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 640,
+        "wires": [
+            [
+                "e6e452394080e373"
+            ]
+        ]
+    },
+    {
+        "id": "67e9262e1c2ae5b0",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8497c91b8429d76d",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 710,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "0f7f81d3e612a10a",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 710,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d027c4f66f7dbf8f",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Copy flow.DBdata to msg payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "DBdata",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 760,
+        "wires": [
+            [
+                "58953d029982b549"
+            ]
+        ]
+    },
+    {
+        "id": "6f29d7f8af0a6ffe",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "mqtt msg test",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "fa0e197e38459b04",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 760,
+        "wires": [
+            [
+                "d027c4f66f7dbf8f"
+            ]
+        ]
+    },
+    {
+        "id": "dbbb609036269901",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Payload for MQTT",
+        "info": "",
+        "x": 210,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "58953d029982b549",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Generate SQL",
+        "func": "//add the values to the msg so they can be debugged and used later\nmsg.device = msg.payload[0]\nmsg.item = msg.payload[1]\nmsg.serial = msg.payload[2]\n\nmsg.topic=`REPLACE INTO pack_to_light (Device,Item,Serial) VALUES ('${msg.device}','${msg.item}',${msg.serial})`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 760,
+        "wires": [
+            [
+                "3adeedd1d8e88a9d",
+                "deed56c3237a2480"
+            ]
+        ]
+    },
+    {
+        "id": "3adeedd1d8e88a9d",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "to MySQL",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 700,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8129f2071848bc52",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "set flow DBdata[1] to item",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[1]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 600,
+        "wires": [
+            [
+                "8497c91b8429d76d"
+            ]
+        ]
+    },
+    {
+        "id": "e6e452394080e373",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "set flow DBdata[2] to serial",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[2]",
+                "pt": "flow",
+                "to": "mpuinput.a",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 640,
+        "wires": [
+            [
+                "0f7f81d3e612a10a"
+            ]
+        ]
+    },
+    {
+        "id": "60b684888f944880",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "set flow DBdata[0] to device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[0]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 560,
+        "wires": [
+            [
+                "67e9262e1c2ae5b0"
+            ]
+        ]
+    },
+    {
+        "id": "bb51f31f2a55e1a1",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "inject device",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sensor",
+        "payloadType": "str",
+        "x": 220,
+        "y": 560,
+        "wires": [
+            [
+                "60b684888f944880"
+            ]
+        ]
+    },
+    {
+        "id": "898747acef495ebf",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mpuinput",
+                "pt": "global",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "deed56c3237a2480",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Generate MQTT topic+payload",
+        "func": "msg.topic = msg.device + '/item_inside'\nmsg.payload = {\n    \"device\" : msg.device,\n    \"item\": msg.item,\n    \"serial\": msg.serial\n}\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 760,
+        "wires": [
+            [
+                "6f29d7f8af0a6ffe",
+                "1a597eae80ff8ba6"
+            ]
+        ]
+    },
+    {
+        "id": "1a597eae80ff8ba6",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mpu",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c6b9bdea374d758",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"mpu.device\")\nvar item = global.get(\"mpu.item\")\nvar serial = global.get(\"mpu.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 880,
+        "wires": [
+            [
+                "3f7ce34da51eab70"
+            ]
+        ]
+    },
+    {
+        "id": "5094a5bb68668433",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 880,
+        "wires": [
+            [
+                "1c6b9bdea374d758"
+            ]
+        ]
+    },
+    {
+        "id": "3f7ce34da51eab70",
+        "type": "mqtt in",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 680,
+        "y": 880,
+        "wires": [
+            [
+                "b11b3d03c168fd42",
+                "de344b024d7786c2"
+            ]
+        ]
+    },
+    {
+        "id": "b11b3d03c168fd42",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "dynamic topic",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "topic",
+        "statusType": "auto",
+        "x": 940,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "6dcb76df51afdd42",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Set up topic",
+        "info": "",
+        "x": 210,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e0ae1ca1204e46b3",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Dynamic subscribe",
+        "info": "",
+        "x": 210,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "8b6dc4cace16b3aa",
+        "type": "comment",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Get serial from user",
+        "info": "",
+        "x": 230,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "890250494b633cf8",
+        "type": "mqtt out",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 630,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "28d81ce3346ec257",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"data\":{\"roll\":5,\"pitch\":50,\"yaw\":89},\"battery\":50,\"isCharging\":true,\"wifi\":-60}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 960,
+        "wires": [
+            [
+                "448128fc885c0572"
+            ]
+        ]
+    },
+    {
+        "id": "448128fc885c0572",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"mpu.device\")\nvar item = global.get(\"mpu.item\")\nvar serial = global.get(\"mpu.serial\") \nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 960,
+        "wires": [
+            [
+                "890250494b633cf8"
+            ]
+        ]
+    },
+    {
+        "id": "25e7b78452016ef8",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "de344b024d7786c2",
+        "type": "change",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mpudata",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 880,
+        "wires": [
+            [
+                "25e7b78452016ef8"
+            ]
+        ]
+    },
+    {
+        "id": "cc8c404ca240c91e",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "function 10",
+        "func": "msg.roll = global.get(\"mpudata.data.roll\")\nmsg.pitch = global.get(\"mpudata.data.pitch\")\nmsg.yaw = global.get(\"mpudata.data.yaw\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1120,
+        "wires": [
+            [
+                "b804e8022e48591e",
+                "af211b6b8304bb4c",
+                "b28673665e6eafb5",
+                "a1e3d6fae9b3de82"
+            ]
+        ]
+    },
+    {
+        "id": "b804e8022e48591e",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "debug 47",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "784a6bc80b17a895",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1120,
+        "wires": [
+            [
+                "cc8c404ca240c91e"
+            ]
+        ]
+    },
+    {
+        "id": "af211b6b8304bb4c",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Yaw: ",
+        "format": "{{msg.yaw}}°",
+        "layout": "row-spread",
+        "className": "",
+        "x": 550,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "8028800e21aee6ec",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "function 11",
+        "func": "msg.battery = global.get(\"mpudata.battery\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1300,
+        "wires": [
+            [
+                "d0f821a401fbb99c",
+                "8175d44f7a53f6ed"
+            ]
+        ]
+    },
+    {
+        "id": "d0f821a401fbb99c",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "debug 48",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "8175d44f7a53f6ed",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery: ",
+        "format": "{{msg.battery}}%",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "216c7b636c4c190a",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "function 12",
+        "func": "msg.charging = global.get(\"mpudata.isCharging\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1480,
+        "wires": [
+            [
+                "e373a5751d351c4f",
+                "c430a9ba87bdee52"
+            ]
+        ]
+    },
+    {
+        "id": "e373a5751d351c4f",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "debug 49",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "c430a9ba87bdee52",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Charging: ",
+        "format": "{{msg.charging}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "60e89f4e1e28c5ae",
+        "type": "function",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "function 13",
+        "func": "msg.wifi = global.get(\"mpudata.wifi\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1660,
+        "wires": [
+            [
+                "34d6717605495708",
+                "1e8c9f1772c40051"
+            ]
+        ]
+    },
+    {
+        "id": "34d6717605495708",
+        "type": "debug",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "debug 50",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "1e8c9f1772c40051",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wifi: ",
+        "format": "{{msg.wifi}}     dBm",
+        "layout": "row-spread",
+        "className": "",
+        "x": 570,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "0e6ed246aa1e2d1c",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1300,
+        "wires": [
+            [
+                "8028800e21aee6ec"
+            ]
+        ]
+    },
+    {
+        "id": "ff8928baa0097f17",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1480,
+        "wires": [
+            [
+                "216c7b636c4c190a"
+            ]
+        ]
+    },
+    {
+        "id": "b7b0c38d491551a9",
+        "type": "inject",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1660,
+        "wires": [
+            [
+                "60e89f4e1e28c5ae"
+            ]
+        ]
+    },
+    {
+        "id": "b28673665e6eafb5",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Roll: ",
+        "format": "{{msg.roll}}°",
+        "layout": "row-spread",
+        "className": "",
+        "x": 550,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "a1e3d6fae9b3de82",
+        "type": "ui_text",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pitch: ",
+        "format": "{{msg.pitch}}°",
+        "layout": "row-spread",
+        "className": "",
+        "x": 670,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "d0de85bc2fb5c9f7",
+        "type": "ui_button",
+        "z": "73e9e8e41d7d2ae1",
+        "name": "Submit",
+        "group": "344d92912a14715e",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "<font size=\"1\">Submit</font>",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "ok",
+        "payloadType": "str",
+        "topic": "b",
+        "topicType": "msg",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "35d080ded4b093ef"
+            ]
+        ]
+    },
+    {
+        "id": "d42742ba283182a3",
+        "type": "ui_template",
+        "z": "73e9e8e41d7d2ae1",
+        "group": "344d92912a14715e",
+        "name": "",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body.nr-dashboard-theme md-content md-card {\n    border-radius: 20px}\n    .nr-dashboard-theme ui-card-panel {\n    border-radius: 20px}\n    #nr-dashboard .masonry-container ui-card-panel {\n    background: transparent ;\n    border:3px solid grey;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74e03d883c8f2ec9",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "Servo 180 graden - Actuator",
+        "info": "(SET) Nieuwe hoek (0-180 graden)\n(SET) Snelheid (acceleratie) - optioneel\n(GET) Huidige hoek (0-180 graden)\n(GET) Batterij voltage (en/of percentage)\n(GET) Oplaad status (zit hij op de oplader ja of nee)\n(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel\n",
+        "x": 160,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "21530955087c2e14",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "(GET) Hoek",
+        "info": "",
+        "x": 130,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "548dadeeef6f1caf",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "(GET) Batterij voltage (en/of percentage) ",
+        "info": "",
+        "x": 220,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "f896259f4bdf54b8",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "(GET) Oplaad status (in de oplader ja of nee)",
+        "info": "",
+        "x": 230,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "56c0af837695f03c",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel",
+        "info": "",
+        "x": 270,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "588435683cf83eb1",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "bb39cb2c9fe9d411"
+            ]
+        ]
+    },
+    {
+        "id": "bb39cb2c9fe9d411",
+        "type": "join",
+        "z": "da772434408204af",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "idinput",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "6f36e8b504cc2aa3",
+                "634538843ab13822",
+                "42dbe78b06ad174c",
+                "4292782180548c68"
+            ]
+        ]
+    },
+    {
+        "id": "6f36e8b504cc2aa3",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "idinput.a",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "50eb7872a4f19394",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "bb39cb2c9fe9d411"
+            ]
+        ]
+    },
+    {
+        "id": "634538843ab13822",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "Clear Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "null",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "8b8dc2d7a61388a2"
+            ]
+        ]
+    },
+    {
+        "id": "8b8dc2d7a61388a2",
+        "type": "ui_text_input",
+        "z": "da772434408204af",
+        "name": "",
+        "label": "serial nummer",
+        "tooltip": "",
+        "group": "f9787aed462aa885",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "a",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 280,
+        "wires": [
+            [
+                "50eb7872a4f19394"
+            ]
+        ]
+    },
+    {
+        "id": "bd3681d2b4a850f4",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "inject item",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "servo",
+        "payloadType": "str",
+        "x": 170,
+        "y": 480,
+        "wires": [
+            [
+                "3dfdffe40303f1e2"
+            ]
+        ]
+    },
+    {
+        "id": "948b1373d9f0d43f",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "inject serial",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "d024e75c23dc4ca4"
+            ]
+        ]
+    },
+    {
+        "id": "576f8fe3c411b81a",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "141c4bd360151b2e",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "e0d498f8e4b534fe",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f5b2acfef982fab5",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "Copy flow.DBdata to msg payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "DBdata",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 640,
+        "wires": [
+            [
+                "d5f2ae58dfb69f75"
+            ]
+        ]
+    },
+    {
+        "id": "9014358244036fb7",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "mqtt msg test",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "bf65b2a542101ce6",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "f5b2acfef982fab5"
+            ]
+        ]
+    },
+    {
+        "id": "a1f8929c85557aca",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "Payload for MQTT",
+        "info": "",
+        "x": 150,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d5f2ae58dfb69f75",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "Generate SQL",
+        "func": "//add the values to the msg so they can be debugged and used later\nmsg.device = msg.payload[0]\nmsg.item = msg.payload[1]\nmsg.serial = msg.payload[2]\n\nmsg.topic=`REPLACE INTO pack_to_light (Device,Item,Serial) VALUES ('${msg.device}','${msg.item}',${msg.serial})`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 640,
+        "wires": [
+            [
+                "341ad8fe26f5c3da",
+                "af61d7af620be30a"
+            ]
+        ]
+    },
+    {
+        "id": "341ad8fe26f5c3da",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "to MySQL",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 640,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "3dfdffe40303f1e2",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "set flow DBdata[1] to item",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[1]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "141c4bd360151b2e"
+            ]
+        ]
+    },
+    {
+        "id": "d024e75c23dc4ca4",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "set flow DBdata[2] to serial",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[2]",
+                "pt": "flow",
+                "to": "servoinput.a",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "e0d498f8e4b534fe"
+            ]
+        ]
+    },
+    {
+        "id": "500cd37768814af8",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "set flow DBdata[0] to device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[0]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 440,
+        "wires": [
+            [
+                "576f8fe3c411b81a"
+            ]
+        ]
+    },
+    {
+        "id": "8dfebd0bab9c5581",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "inject device",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "actuator",
+        "payloadType": "str",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "500cd37768814af8"
+            ]
+        ]
+    },
+    {
+        "id": "42dbe78b06ad174c",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "servoinput",
+                "pt": "global",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af61d7af620be30a",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "Generate MQTT topic+payload",
+        "func": "msg.topic = msg.device + '/item_inside'\nmsg.payload = {\n    \"device\" : msg.device,\n    \"item\": msg.item,\n    \"serial\": msg.serial\n}\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 640,
+        "wires": [
+            [
+                "9014358244036fb7",
+                "3586cfce185f6355"
+            ]
+        ]
+    },
+    {
+        "id": "3586cfce185f6355",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "servo",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6127ee3e8104e079",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"servo.device\")\nvar item = global.get(\"servo.item\")\nvar serial = global.get(\"servo.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 760,
+        "wires": [
+            [
+                "e208bcd68d722c61"
+            ]
+        ]
+    },
+    {
+        "id": "64d0f196d268f79c",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "6127ee3e8104e079"
+            ]
+        ]
+    },
+    {
+        "id": "e208bcd68d722c61",
+        "type": "mqtt in",
+        "z": "da772434408204af",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 620,
+        "y": 760,
+        "wires": [
+            [
+                "3859bf18f1fc9126",
+                "f26a43d8a6a67f38"
+            ]
+        ]
+    },
+    {
+        "id": "3859bf18f1fc9126",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "dynamic topic",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "topic",
+        "statusType": "auto",
+        "x": 880,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "e6433116021b5e54",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "Set up topic",
+        "info": "",
+        "x": 150,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c12839682e9046e9",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "Dynamic subscribe",
+        "info": "",
+        "x": 150,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "7b58a0ac7cacab47",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "Get serial from user",
+        "info": "",
+        "x": 170,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0b7d1237db50280d",
+        "type": "mqtt out",
+        "z": "da772434408204af",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 570,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "9fa552abb94b65b1",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"data\":{\"hoek\":50},\"battery\":4.3,\"isCharging\":true,\"wifi\":-40}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 840,
+        "wires": [
+            [
+                "4e24b2d331809808"
+            ]
+        ]
+    },
+    {
+        "id": "4e24b2d331809808",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"servo.device\")\nvar item = global.get(\"servo.item\")\nvar serial = global.get(\"servo.serial\") \nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 840,
+        "wires": [
+            [
+                "0b7d1237db50280d"
+            ]
+        ]
+    },
+    {
+        "id": "ec13895b407ddc2b",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "f26a43d8a6a67f38",
+        "type": "change",
+        "z": "da772434408204af",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "servodata",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 760,
+        "wires": [
+            [
+                "ec13895b407ddc2b"
+            ]
+        ]
+    },
+    {
+        "id": "09c6ccd53ee39352",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "function 14",
+        "func": "msg.hoek = global.get(\"servodata.data.hoek\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1180,
+        "wires": [
+            [
+                "96d1f5cce1c73940",
+                "d19d25a610ad57c9"
+            ]
+        ]
+    },
+    {
+        "id": "96d1f5cce1c73940",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "debug 51",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "efcecd3f03358c0a",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1180,
+        "wires": [
+            [
+                "09c6ccd53ee39352"
+            ]
+        ]
+    },
+    {
+        "id": "d19d25a610ad57c9",
+        "type": "ui_text",
+        "z": "da772434408204af",
+        "group": "f9787aed462aa885",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hoek: ",
+        "format": "{{msg.hoek}}°",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "259ada77b6fe02e4",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "function 15",
+        "func": "msg.battery = global.get(\"servodata.battery\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1360,
+        "wires": [
+            [
+                "fa0ddf9166f71bf5",
+                "8216c5841615aae1"
+            ]
+        ]
+    },
+    {
+        "id": "fa0ddf9166f71bf5",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "debug 52",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "8216c5841615aae1",
+        "type": "ui_text",
+        "z": "da772434408204af",
+        "group": "f9787aed462aa885",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery: ",
+        "format": "{{msg.battery}}%",
+        "layout": "row-spread",
+        "className": "",
+        "x": 520,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "824e7fa3b43242f7",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "function 16",
+        "func": "msg.charging = global.get(\"servodata.isCharging\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1540,
+        "wires": [
+            [
+                "1b9d84632ad4a656",
+                "29093e7ee74a1416"
+            ]
+        ]
+    },
+    {
+        "id": "1b9d84632ad4a656",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "debug 53",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "29093e7ee74a1416",
+        "type": "ui_text",
+        "z": "da772434408204af",
+        "group": "f9787aed462aa885",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Charging: ",
+        "format": "{{msg.charging}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 520,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f253ca74d24a083c",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "function 17",
+        "func": "msg.wifi = global.get(\"servodata.wifi\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1720,
+        "wires": [
+            [
+                "46b3ab3de7640748",
+                "924b719732cc0bbd"
+            ]
+        ]
+    },
+    {
+        "id": "46b3ab3de7640748",
+        "type": "debug",
+        "z": "da772434408204af",
+        "name": "debug 54",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "924b719732cc0bbd",
+        "type": "ui_text",
+        "z": "da772434408204af",
+        "group": "f9787aed462aa885",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wifi: ",
+        "format": "{{msg.wifi}}dBm",
+        "layout": "row-spread",
+        "className": "",
+        "x": 510,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "9336b885f92b2153",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1360,
+        "wires": [
+            [
+                "259ada77b6fe02e4"
+            ]
+        ]
+    },
+    {
+        "id": "c7f54fe8382c239c",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1540,
+        "wires": [
+            [
+                "824e7fa3b43242f7"
+            ]
+        ]
+    },
+    {
+        "id": "c9085b261caebc33",
+        "type": "inject",
+        "z": "da772434408204af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1720,
+        "wires": [
+            [
+                "f253ca74d24a083c"
+            ]
+        ]
+    },
+    {
+        "id": "c5fb0f8060ce2468",
+        "type": "ui_slider",
+        "z": "da772434408204af",
+        "name": "",
+        "label": "Hoek: ",
+        "tooltip": "",
+        "group": "f9787aed462aa885",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": 1,
+        "className": "",
+        "x": 230,
+        "y": 1060,
+        "wires": [
+            [
+                "636f13b60f2e1259"
+            ]
+        ]
+    },
+    {
+        "id": "f8363ca3ba8bf962",
+        "type": "mqtt out",
+        "z": "da772434408204af",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 670,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "636f13b60f2e1259",
+        "type": "function",
+        "z": "da772434408204af",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"servo.device\")\nvar item = global.get(\"servo.item\")\nvar serial = global.get(\"servo.serial\") \nvar data = \"getData\"\n\nmsg.payload = { \"data\": msg.payload}\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1060,
+        "wires": [
+            [
+                "f8363ca3ba8bf962"
+            ]
+        ]
+    },
+    {
+        "id": "bc698aa26db4887e",
+        "type": "ui_template",
+        "z": "da772434408204af",
+        "group": "f9787aed462aa885",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nmd-slider[md-discrete] .md-sign,\nmd-slider[md-discrete] .md-sign:after {\n opacity: 1;\n -webkit-transform: translate3d(0, 0, 0) scale(1);\n transform: translate3d(0, 0, 0) scale(1);\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 800,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7fa8ae6cd945eb0",
+        "type": "comment",
+        "z": "da772434408204af",
+        "name": "(SET) Hoek",
+        "info": "",
+        "x": 110,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "9a49f1a078f78001",
+        "type": "ui_button",
+        "z": "da772434408204af",
+        "name": "Submit",
+        "group": "f9787aed462aa885",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "<font size=\"1\">Submit</font>",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "ok",
+        "payloadType": "str",
+        "topic": "b",
+        "topicType": "msg",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "588435683cf83eb1"
+            ]
+        ]
+    },
+    {
+        "id": "4292782180548c68",
+        "type": "ui_text",
+        "z": "da772434408204af",
+        "group": "f9787aed462aa885",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Id:",
+        "label": "<font size=\"1\">ID: </font>",
+        "format": "<font size=\"2\">{{msg.idinput.a}}</font>",
+        "layout": "row-left",
+        "className": "",
+        "x": 870,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "def35b2ffcc28d27",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "LED matrix - Actuator",
+        "info": "(SET) Het mooiste lijkt mij zoiets als micro:bit\n\nX O O O X\nO X O X O\nO O O O O \nO X O X O\nX O O O X\n\n(SET) Wellicht een nummer dat je op de matrix zelf dit nummer op maakt (dit doet microbit ook), dan hoef je niet zelf in een node-red elk mogelijke nummer te tekenen\n(GET) Batterij voltage (en/of percentage)\n(GET) Oplaad status (zit hij op de oplader ja of nee)\n(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel\n",
+        "x": 140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "8fdccce5559e4f49",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "(GET) Text",
+        "info": "",
+        "x": 120,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7695b975c929ca52",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "(GET) Batterij voltage (en/of percentage) ",
+        "info": "",
+        "x": 220,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "cc7aa3d0dea72cf1",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "(GET) Oplaad status (in de oplader ja of nee)",
+        "info": "",
+        "x": 230,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "2934cfd3b0244123",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "(GET) Wifi-Status (sterkte van het signaal (dB)) - optioneel",
+        "info": "",
+        "x": 270,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "938bbaa32110af10",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "62d899445b8cec72"
+            ]
+        ]
+    },
+    {
+        "id": "62d899445b8cec72",
+        "type": "join",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "idinput",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "a4e6ae75d9e653b9",
+                "ee807554c0b7fc35",
+                "9840232b19d378e6",
+                "119b83317f768225"
+            ]
+        ]
+    },
+    {
+        "id": "a4e6ae75d9e653b9",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "idinput.a",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a3e17455b7b8fd1c",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "62d899445b8cec72"
+            ]
+        ]
+    },
+    {
+        "id": "ee807554c0b7fc35",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Clear Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "null",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "78246728ad0b27c2"
+            ]
+        ]
+    },
+    {
+        "id": "78246728ad0b27c2",
+        "type": "ui_text_input",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "label": "serial nummer",
+        "tooltip": "",
+        "group": "0201fe540ed504b3",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "a",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 280,
+        "wires": [
+            [
+                "a3e17455b7b8fd1c"
+            ]
+        ]
+    },
+    {
+        "id": "f3cc1dad44d87ce8",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "inject item",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "matrix",
+        "payloadType": "str",
+        "x": 170,
+        "y": 480,
+        "wires": [
+            [
+                "b09f69515e50fb73"
+            ]
+        ]
+    },
+    {
+        "id": "35563282e02dff5b",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "inject serial",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "e722012e0a209890"
+            ]
+        ]
+    },
+    {
+        "id": "c6794a9171711685",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "963b53dc1aa39729",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ae9db1ec0e6f7ffa",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "27e9de04d27228a2",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Copy flow.DBdata to msg payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "DBdata",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 640,
+        "wires": [
+            [
+                "d4b9eb92097570ac"
+            ]
+        ]
+    },
+    {
+        "id": "173577f6eb58f951",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "mqtt msg test",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "cf6c7949fa4d9673",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "27e9de04d27228a2"
+            ]
+        ]
+    },
+    {
+        "id": "8f6633f0e121ca2b",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Payload for MQTT",
+        "info": "",
+        "x": 150,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d4b9eb92097570ac",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Generate SQL",
+        "func": "//add the values to the msg so they can be debugged and used later\nmsg.device = msg.payload[0]\nmsg.item = msg.payload[1]\nmsg.serial = msg.payload[2]\n\nmsg.topic=`REPLACE INTO pack_to_light (Device,Item,Serial) VALUES ('${msg.device}','${msg.item}',${msg.serial})`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 640,
+        "wires": [
+            [
+                "560d0ded54c373f4",
+                "174dd0073c1cd3ea"
+            ]
+        ]
+    },
+    {
+        "id": "560d0ded54c373f4",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "to MySQL",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 640,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "b09f69515e50fb73",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "set flow DBdata[1] to item",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[1]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "963b53dc1aa39729"
+            ]
+        ]
+    },
+    {
+        "id": "e722012e0a209890",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "set flow DBdata[2] to serial",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[2]",
+                "pt": "flow",
+                "to": "matrixinput.a",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "ae9db1ec0e6f7ffa"
+            ]
+        ]
+    },
+    {
+        "id": "db440bafc84c76cf",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "set flow DBdata[0] to device",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DBdata[0]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 440,
+        "wires": [
+            [
+                "c6794a9171711685"
+            ]
+        ]
+    },
+    {
+        "id": "e0cc86d040f7c678",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "inject device",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "actuator",
+        "payloadType": "str",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "db440bafc84c76cf"
+            ]
+        ]
+    },
+    {
+        "id": "9840232b19d378e6",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "matrixinput",
+                "pt": "global",
+                "to": "idinput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "174dd0073c1cd3ea",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Generate MQTT topic+payload",
+        "func": "msg.topic = msg.device + '/item_inside'\nmsg.payload = {\n    \"device\" : msg.device,\n    \"item\": msg.item,\n    \"serial\": msg.serial\n}\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 640,
+        "wires": [
+            [
+                "173577f6eb58f951",
+                "e0b9757d9ae43117"
+            ]
+        ]
+    },
+    {
+        "id": "e0b9757d9ae43117",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "matrix",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6452c08b24cc556a",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"matrix.device\")\nvar item = global.get(\"matrix.item\")\nvar serial = global.get(\"matrix.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 760,
+        "wires": [
+            [
+                "9543502fdc3dcd5e"
+            ]
+        ]
+    },
+    {
+        "id": "5bb2f843c6f32ee4",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "6452c08b24cc556a"
+            ]
+        ]
+    },
+    {
+        "id": "9543502fdc3dcd5e",
+        "type": "mqtt in",
+        "z": "6397e4bd92a0e7f0",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 620,
+        "y": 760,
+        "wires": [
+            [
+                "24f9ad7257244196",
+                "5d9ff38f0e79625d"
+            ]
+        ]
+    },
+    {
+        "id": "24f9ad7257244196",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "dynamic topic",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "topic",
+        "statusType": "auto",
+        "x": 880,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "89cd1307de9bae72",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Set up topic",
+        "info": "",
+        "x": 150,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "160a344285214764",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Dynamic subscribe",
+        "info": "",
+        "x": 150,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "4e3b72198f474f93",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Get serial from user",
+        "info": "",
+        "x": 170,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6c51798677ec0b95",
+        "type": "mqtt out",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 570,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "e792a794454763c6",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"data\":{\"text\":\"test\"},\"battery\":80,\"isCharging\":true,\"wifi\":-60}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 840,
+        "wires": [
+            [
+                "863ff641f4039fbb"
+            ]
+        ]
+    },
+    {
+        "id": "863ff641f4039fbb",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"matrix.device\")\nvar item = global.get(\"matrix.item\")\nvar serial = global.get(\"matrix.serial\") \nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 840,
+        "wires": [
+            [
+                "6c51798677ec0b95"
+            ]
+        ]
+    },
+    {
+        "id": "7b9932be3b233cbc",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5d9ff38f0e79625d",
+        "type": "change",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "matrixdata",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 760,
+        "wires": [
+            [
+                "7b9932be3b233cbc"
+            ]
+        ]
+    },
+    {
+        "id": "dcd73abbe644f395",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "function 18",
+        "func": "msg.text = global.get(\"matrixdata.data.text\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1180,
+        "wires": [
+            [
+                "bbce72af271d95d5",
+                "5a1a4088bed00bb2"
+            ]
+        ]
+    },
+    {
+        "id": "bbce72af271d95d5",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "debug 55",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "70ef5a6574a70278",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1180,
+        "wires": [
+            [
+                "dcd73abbe644f395"
+            ]
+        ]
+    },
+    {
+        "id": "5a1a4088bed00bb2",
+        "type": "ui_text",
+        "z": "6397e4bd92a0e7f0",
+        "group": "0201fe540ed504b3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Text: ",
+        "format": "{{msg.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "68ce56d0cf75f539",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "function 19",
+        "func": "msg.battery = global.get(\"matrixdata.battery\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1360,
+        "wires": [
+            [
+                "a7f69b1a45c177d1",
+                "fa886cd59d456488"
+            ]
+        ]
+    },
+    {
+        "id": "a7f69b1a45c177d1",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "debug 56",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "fa886cd59d456488",
+        "type": "ui_text",
+        "z": "6397e4bd92a0e7f0",
+        "group": "0201fe540ed504b3",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery: ",
+        "format": "{{msg.battery}}%",
+        "layout": "row-spread",
+        "className": "",
+        "x": 520,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "5eb46f5217968799",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "function 20",
+        "func": "msg.charging = global.get(\"matrixdata.isCharging\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1540,
+        "wires": [
+            [
+                "ca21a8c637ee97df",
+                "494ec244a94855da"
+            ]
+        ]
+    },
+    {
+        "id": "ca21a8c637ee97df",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "debug 57",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "494ec244a94855da",
+        "type": "ui_text",
+        "z": "6397e4bd92a0e7f0",
+        "group": "0201fe540ed504b3",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Charging: ",
+        "format": "{{msg.charging}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 520,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "733f366563da1804",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "function 21",
+        "func": "msg.wifi = global.get(\"matrixdata.wifi\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1720,
+        "wires": [
+            [
+                "61ffdc5513271891",
+                "216dbfd2f9cac751"
+            ]
+        ]
+    },
+    {
+        "id": "61ffdc5513271891",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "debug 58",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "afstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "216dbfd2f9cac751",
+        "type": "ui_text",
+        "z": "6397e4bd92a0e7f0",
+        "group": "0201fe540ed504b3",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wifi: ",
+        "format": "{{msg.wifi}}dBm",
+        "layout": "row-spread",
+        "className": "",
+        "x": 510,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "2e28fdec51a59fb6",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1360,
+        "wires": [
+            [
+                "68ce56d0cf75f539"
+            ]
+        ]
+    },
+    {
+        "id": "28966c4b38905b67",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1540,
+        "wires": [
+            [
+                "5eb46f5217968799"
+            ]
+        ]
+    },
+    {
+        "id": "b0bd9d1a599cd782",
+        "type": "inject",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1720,
+        "wires": [
+            [
+                "733f366563da1804"
+            ]
+        ]
+    },
+    {
+        "id": "0d75f4a0c387d180",
+        "type": "mqtt out",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 510,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "e660aa5dd3e3e67e",
+        "type": "function",
+        "z": "6397e4bd92a0e7f0",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"matrix.device\")\nvar item = global.get(\"matrix.item\")\nvar serial = global.get(\"matrix.serial\") \nvar data = \"getData\"\n\nmsg.payload = {\"data\" : msg.payload}\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1020,
+        "wires": [
+            [
+                "0d75f4a0c387d180",
+                "3e2dacc4deeea8fc"
+            ]
+        ]
+    },
+    {
+        "id": "0fc464fc09bb2e6c",
+        "type": "comment",
+        "z": "6397e4bd92a0e7f0",
+        "name": "(SET) Text",
+        "info": "",
+        "x": 100,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ad58784444103c07",
+        "type": "ui_template",
+        "z": "6397e4bd92a0e7f0",
+        "group": "0201fe540ed504b3",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nmd-slider[md-discrete] .md-sign,\nmd-slider[md-discrete] .md-sign:after {\n opacity: 1;\n -webkit-transform: translate3d(0, 0, 0) scale(1);\n transform: translate3d(0, 0, 0) scale(1);\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f31e5f3d6f3d166a",
+        "type": "ui_button",
+        "z": "6397e4bd92a0e7f0",
+        "name": "Submit",
+        "group": "0201fe540ed504b3",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "<font size=\"1\">Submit</font>",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "ok",
+        "payloadType": "str",
+        "topic": "b",
+        "topicType": "msg",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "938bbaa32110af10"
+            ]
+        ]
+    },
+    {
+        "id": "119b83317f768225",
+        "type": "ui_text",
+        "z": "6397e4bd92a0e7f0",
+        "group": "0201fe540ed504b3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Id:",
+        "label": "<font size=\"1\">ID: </font>",
+        "format": "<font size=\"2\">{{msg.idinput.a}}</font>",
+        "layout": "row-left",
+        "className": "",
+        "x": 890,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3e2dacc4deeea8fc",
+        "type": "debug",
+        "z": "6397e4bd92a0e7f0",
+        "name": "debug 59",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "92ade02ce003acdb",
+        "type": "ui_text_input",
+        "z": "6397e4bd92a0e7f0",
+        "name": "",
+        "label": "Text input",
+        "tooltip": "",
+        "group": "0201fe540ed504b3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "100",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1020,
+        "wires": [
+            [
+                "e660aa5dd3e3e67e"
+            ]
+        ]
+    },
+    {
+        "id": "cb376c3be1dc7cf5",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown Servo",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "21730c426eb878f6",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 590,
+        "y": 780,
+        "wires": [
+            [
+                "c350d867f894ecd0",
+                "fec605e0b631abfd"
+            ]
+        ]
+    },
+    {
+        "id": "3c94349e290d3616",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "servo serial dropdown",
+        "func": "var option1 = global.get(\"servo.serial\")\nmsg.options = \n[\n    {\n        [option1] : global.get(\"servo\") \n    },\n    {\n        \"-\": \"-\"\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 780,
+        "wires": [
+            [
+                "cb376c3be1dc7cf5"
+            ]
+        ]
+    },
+    {
+        "id": "3e3873ba46d092ad",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 780,
+        "wires": [
+            [
+                "3c94349e290d3616"
+            ]
+        ]
+    },
+    {
+        "id": "5403ff22d8641a3e",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "21730c426eb878f6",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select Servo:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 130,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "531cc63643179471",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown MPU",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "21730c426eb878f6",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 580,
+        "y": 640,
+        "wires": [
+            [
+                "3e4e5aa268b2e12a",
+                "7aa7c8bd059193de"
+            ]
+        ]
+    },
+    {
+        "id": "edcc5fdfe05b0c40",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "mpu serial dropdown",
+        "func": "var option1 = global.get(\"mpu.serial\")\nmsg.options =\n    [\n        {\n            [option1]: global.get(\"mpu\")\n        },\n        {\n            \"-\": \"-\"\n        }\n    ]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "531cc63643179471"
+            ]
+        ]
+    },
+    {
+        "id": "96963f7bad0cf952",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "edcc5fdfe05b0c40"
+            ]
+        ]
+    },
+    {
+        "id": "46439e193f0c9e03",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "21730c426eb878f6",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select MPU:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 130,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3091385ae636e8cf",
+        "type": "comment",
+        "z": "f38534ab1a232b5a",
+        "name": "Connect MPU en Servo",
+        "info": "",
+        "x": 120,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2a6f22d7c327feb6",
+        "type": "comment",
+        "z": "f38534ab1a232b5a",
+        "name": "Connect ToF en Servo",
+        "info": "",
+        "x": 160,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a92b537412f4309a",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "21730c426eb878f6",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "MPU",
+        "label": "<font size=\"1\">MPU: </font>",
+        "format": "<font size=\"2\">{{msg.mputoservo.serial}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 990,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3e4e5aa268b2e12a",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "mputoservo",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 600,
+        "wires": [
+            [
+                "a92b537412f4309a"
+            ]
+        ]
+    },
+    {
+        "id": "afbedd84d697bf52",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "21730c426eb878f6",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "Servo",
+        "label": "<font size=\"1\">Servo: </font>",
+        "format": "<font size=\"2\">{{msg.servotompu.serial}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 1030,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "c350d867f894ecd0",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "servotompu",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 740,
+        "wires": [
+            [
+                "afbedd84d697bf52"
+            ]
+        ]
+    },
+    {
+        "id": "b24eb34dd0f8ad18",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown RPY",
+        "label": "",
+        "tooltip": "{\"a\":1}",
+        "place": "Select option",
+        "group": "21730c426eb878f6",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Roll",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Pitch",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "Yaw",
+                "value": 3,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 120,
+        "y": 880,
+        "wires": [
+            [
+                "26e4224ab98e2125"
+            ]
+        ]
+    },
+    {
+        "id": "e2b61b78deffc234",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "21730c426eb878f6",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select rotation:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 100,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "130f54856f64da30",
+        "type": "range",
+        "z": "f38534ab1a232b5a",
+        "minin": "-90",
+        "maxin": "90",
+        "minout": "0",
+        "maxout": "180",
+        "action": "clamp",
+        "round": true,
+        "property": "payload",
+        "name": "mpu naar servo",
+        "x": 1280,
+        "y": 960,
+        "wires": [
+            [
+                "3c4d36ac20c2a62c"
+            ]
+        ]
+    },
+    {
+        "id": "4576761ae54c6b59",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"mpu.device\")\nvar item = global.get(\"mpu.item\")\nvar serial = global.get(\"mputoservo.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 960,
+        "wires": [
+            [
+                "1f8ac1e678644379"
+            ]
+        ]
+    },
+    {
+        "id": "1f8ac1e678644379",
+        "type": "mqtt in",
+        "z": "f38534ab1a232b5a",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 580,
+        "y": 960,
+        "wires": [
+            [
+                "173fd14a44de30cb"
+            ]
+        ]
+    },
+    {
+        "id": "3c4d36ac20c2a62c",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"servo.device\")\nvar item = global.get(\"servo.item\")\nvar serial = global.get(\"servotompu.serial\")\nvar data = \"getData\"\n\nmsg.payload = { \"data\": msg.payload }\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 960,
+        "wires": [
+            [
+                "3cb62b2d5195a3d4",
+                "210f728ab19eb5b9"
+            ]
+        ]
+    },
+    {
+        "id": "3cb62b2d5195a3d4",
+        "type": "mqtt out",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 1690,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "26e4224ab98e2125",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "RPYinput",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab31c399b046776b",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 960,
+        "wires": [
+            [
+                "4576761ae54c6b59"
+            ]
+        ]
+    },
+    {
+        "id": "173fd14a44de30cb",
+        "type": "switch",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "property": "RPYinput",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 810,
+        "y": 960,
+        "wires": [
+            [
+                "3ae24dd90d479e24"
+            ],
+            [
+                "9f8302ca6bf66810"
+            ],
+            [
+                "9cfd9e714826f1da"
+            ]
+        ]
+    },
+    {
+        "id": "3ae24dd90d479e24",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "function to roll",
+        "func": "msg.payload = msg.payload.data.roll\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 920,
+        "wires": [
+            [
+                "130f54856f64da30"
+            ]
+        ]
+    },
+    {
+        "id": "9f8302ca6bf66810",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "function to pitch",
+        "func": "msg.payload = msg.payload.data.pitch\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 960,
+        "wires": [
+            [
+                "130f54856f64da30"
+            ]
+        ]
+    },
+    {
+        "id": "9cfd9e714826f1da",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "function to yaw",
+        "func": "msg.payload = msg.payload.data.yaw\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1000,
+        "wires": [
+            [
+                "130f54856f64da30"
+            ]
+        ]
+    },
+    {
+        "id": "1c846952777dc6f7",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown Servo",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "07c22ea244a45299",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "e4fa2410cbf41e4f",
+                "5a6d8dd784f3c422"
+            ]
+        ]
+    },
+    {
+        "id": "e35c4a9c58ae81bb",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "servo serial dropdown",
+        "func": "var option1 = global.get(\"servo.serial\")\nmsg.options = \n[\n    {\n        [option1] : global.get(\"servo\") \n    },\n    {\n        \"-\": \"-\"\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "1c846952777dc6f7"
+            ]
+        ]
+    },
+    {
+        "id": "2e299d5fb07046c8",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "e35c4a9c58ae81bb"
+            ]
+        ]
+    },
+    {
+        "id": "09f08bf258b0963f",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "07c22ea244a45299",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select Servo:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 130,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ce49f29de171f910",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown ToF",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "07c22ea244a45299",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 540,
+        "y": 180,
+        "wires": [
+            [
+                "18aa26ab8cdeea7b",
+                "0dbd77c5f077a902"
+            ]
+        ]
+    },
+    {
+        "id": "eb5882745e838875",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "tof serial dropdown",
+        "func": "var option1 = global.get(\"ToF.serial\")\nmsg.options = \n[\n    {\n        [option1] : global.get(\"ToF\") \n    },\n    {\n        \"-\": \"-\"\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "ce49f29de171f910"
+            ]
+        ]
+    },
+    {
+        "id": "66d880f6a430e23a",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "eb5882745e838875"
+            ]
+        ]
+    },
+    {
+        "id": "c90fe51e28cfec63",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "07c22ea244a45299",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select ToF:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 130,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8f617a47e147e12d",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "07c22ea244a45299",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "ToF",
+        "label": "<font size=\"1\">ToF: </font>",
+        "format": "<font size=\"2\">{{msg.toftoservo.serial}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 950,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "18aa26ab8cdeea7b",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toftoservo",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 140,
+        "wires": [
+            [
+                "8f617a47e147e12d"
+            ]
+        ]
+    },
+    {
+        "id": "b681400b3a9ebe2f",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "07c22ea244a45299",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "Servo",
+        "label": "<font size=\"1\">Servo: </font>",
+        "format": "<font size=\"2\">{{msg.servototof.serial}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 970,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e4fa2410cbf41e4f",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "servototof",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 280,
+        "wires": [
+            [
+                "b681400b3a9ebe2f"
+            ]
+        ]
+    },
+    {
+        "id": "dd6903be1a3c81df",
+        "type": "range",
+        "z": "f38534ab1a232b5a",
+        "minin": "0",
+        "maxin": "500",
+        "minout": "0",
+        "maxout": "180",
+        "action": "clamp",
+        "round": true,
+        "property": "payload",
+        "name": "tof naar servo",
+        "x": 980,
+        "y": 380,
+        "wires": [
+            [
+                "f78afc4d8fe97803"
+            ]
+        ]
+    },
+    {
+        "id": "a2f7acd1304d377d",
+        "type": "mqtt out",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 1370,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e31ea4bdaa585618",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"ToF.device\")\nvar item = global.get(\"ToF.item\")\nvar serial = global.get(\"toftoservo.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "7150735225e85a14"
+            ]
+        ]
+    },
+    {
+        "id": "e7bc6995a08e0570",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "e31ea4bdaa585618"
+            ]
+        ]
+    },
+    {
+        "id": "7150735225e85a14",
+        "type": "mqtt in",
+        "z": "f38534ab1a232b5a",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "a32fc3207c7d53f4"
+            ]
+        ]
+    },
+    {
+        "id": "f78afc4d8fe97803",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"servo.device\")\nvar item = global.get(\"servo.item\")\nvar serial = global.get(\"servototof.serial\")\nvar data = \"getData\"\n\nmsg.payload = { \"data\": msg.payload }\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 380,
+        "wires": [
+            [
+                "a2f7acd1304d377d"
+            ]
+        ]
+    },
+    {
+        "id": "a32fc3207c7d53f4",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "getAfstand",
+        "func": "msg.payload = msg.payload.data.afstand\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 380,
+        "wires": [
+            [
+                "dd6903be1a3c81df"
+            ]
+        ]
+    },
+    {
+        "id": "2d5986757ff31fd3",
+        "type": "comment",
+        "z": "f38534ab1a232b5a",
+        "name": "Connect ToF en Matrix",
+        "info": "",
+        "x": 120,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "694475f97365cbbf",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown Matrix",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "f1be4834f23f01d8",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 590,
+        "y": 1380,
+        "wires": [
+            [
+                "e15623956c9aa0a1",
+                "b306a917e3c39bfe"
+            ]
+        ]
+    },
+    {
+        "id": "1a112e36532b91f9",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "matrix serial dropdown",
+        "func": "var option1 = global.get(\"matrix.serial\")\nmsg.options = \n[\n    {\n        [option1]: global.get(\"matrix\") \n    },\n    {\n        \"-\":\"-\"\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1380,
+        "wires": [
+            [
+                "694475f97365cbbf"
+            ]
+        ]
+    },
+    {
+        "id": "9bdd97174ea1bf08",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1380,
+        "wires": [
+            [
+                "1a112e36532b91f9"
+            ]
+        ]
+    },
+    {
+        "id": "ce26b2b68355522c",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "f1be4834f23f01d8",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select Matrix:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 140,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "e15623956c9aa0a1",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "matrixtotof",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 1340,
+        "wires": [
+            [
+                "988119e6ad51125c"
+            ]
+        ]
+    },
+    {
+        "id": "ad85a0673694c69a",
+        "type": "ui_dropdown",
+        "z": "f38534ab1a232b5a",
+        "name": "Dropdown ToF",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "f1be4834f23f01d8",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 560,
+        "y": 1220,
+        "wires": [
+            [
+                "6e213129d2d9a632",
+                "75019c823777909c"
+            ]
+        ]
+    },
+    {
+        "id": "e4839963b78c317e",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "tof serial dropdown",
+        "func": "var option1 = global.get(\"ToF.serial\")\nmsg.options = \n[\n    {\n        [option1] : global.get(\"ToF\") \n    },\n    {\n        \"-\":\"-\"\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1220,
+        "wires": [
+            [
+                "ad85a0673694c69a"
+            ]
+        ]
+    },
+    {
+        "id": "d0b5b87e30740ef2",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1220,
+        "wires": [
+            [
+                "e4839963b78c317e"
+            ]
+        ]
+    },
+    {
+        "id": "02adedfc4d113302",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "f1be4834f23f01d8",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Select ToF:",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 130,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "3442bc21572c4253",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "f1be4834f23f01d8",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "ToF",
+        "label": "<font size=\"1\">ToF: </font>",
+        "format": "<font size=\"2\">{{msg.toftomatrix.serial}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 950,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "6e213129d2d9a632",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toftomatrix",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 1180,
+        "wires": [
+            [
+                "3442bc21572c4253"
+            ]
+        ]
+    },
+    {
+        "id": "5b04f02a5956de11",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "action & topic",
+        "func": "msg.topic = context.get(\"subscribed\") ?? \"default/topic\";\nmsg.action = \"unsubscribe\";\n\nnode.send(msg);\n\nmsg.action =\"subscribe\";\n\n\nvar device = global.get(\"ToF.device\")\nvar item = global.get(\"ToF.item\")\nvar serial = global.get(\"toftomatrix.serial\")\nvar data = \"data\"\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\n\n\n\nnode.status({\"text\":msg.topic});\ncontext.set(\"subscribed\", msg.topic);\n return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1460,
+        "wires": [
+            [
+                "72d42d0662910d7b"
+            ]
+        ]
+    },
+    {
+        "id": "4fc29537ca283bde",
+        "type": "inject",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1460,
+        "wires": [
+            [
+                "5b04f02a5956de11"
+            ]
+        ]
+    },
+    {
+        "id": "72d42d0662910d7b",
+        "type": "mqtt in",
+        "z": "f38534ab1a232b5a",
+        "name": "dynamic subscription MQTT",
+        "topic": "",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7fedc3b37f9447ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 620,
+        "y": 1460,
+        "wires": [
+            [
+                "3cf07a79fb5f3d34"
+            ]
+        ]
+    },
+    {
+        "id": "3cf07a79fb5f3d34",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tofdata.data.afstand",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 1460,
+        "wires": [
+            [
+                "524b9d26a9d6b826"
+            ]
+        ]
+    },
+    {
+        "id": "988119e6ad51125c",
+        "type": "ui_text",
+        "z": "f38534ab1a232b5a",
+        "group": "f1be4834f23f01d8",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "Matrix",
+        "label": "<font size=\"1\">Matrix: </font>",
+        "format": "<font size=\"2\">{{msg.matrixtotof.serial}}</font?",
+        "layout": "row-left",
+        "className": "",
+        "x": 1030,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "f9d15048da69b937",
+        "type": "mqtt out",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7fedc3b37f9447ae",
+        "x": 1250,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "524b9d26a9d6b826",
+        "type": "function",
+        "z": "f38534ab1a232b5a",
+        "name": "subscribe function",
+        "func": "var device = global.get(\"matrix.device\")\nvar item = global.get(\"matrix.item\")\nvar serial = global.get(\"matrixtotof.serial\") \nvar data = \"getData\"\n\nvar string = JSON.stringify(msg.payload);\nmsg.payload = { \"data\": string }\n\nmsg.topic = device + \"/\" + item + \"/\" + serial + \"/\" + data;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1460,
+        "wires": [
+            [
+                "f9d15048da69b937"
+            ]
+        ]
+    },
+    {
+        "id": "5a6d8dd784f3c422",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "servototof",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0dbd77c5f077a902",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "toftoservo",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b306a917e3c39bfe",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "matrixtotof",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75019c823777909c",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "toftomatrix",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7aa7c8bd059193de",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mputoservo",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fec605e0b631abfd",
+        "type": "change",
+        "z": "f38534ab1a232b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "servotompu",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "210f728ab19eb5b9",
+        "type": "debug",
+        "z": "f38534ab1a232b5a",
+        "name": "debug 60",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1680,
+        "y": 1040,
+        "wires": []
+    }
+]
